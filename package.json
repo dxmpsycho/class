@@ -1,0 +1,26 @@
+{
+  "name": "class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest",
+    "dev": "nodemon app.js",
+    "import_db_dump": "psql -h localhost -d class -U postgres -f test.sql"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@koa/router": "^10.1.1",
+    "knex": "^2.1.0",
+    "koa": "^2.13.4",
+    "nodemon": "^2.0.16",
+    "pg": "^8.7.3"
+  },
+  "devDependencies": {
+    "jest": "^28.1.0",
+    "koa-bodyparser": "^4.3.0",
+    "supertest": "^6.2.3"
+  }
+}
