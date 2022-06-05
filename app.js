@@ -14,13 +14,6 @@ try {
         .use(router.routes())
         .use(router.allowedMethods());
 
-
-
-    if (process.argv[2] === '-db_force_update') {
-        const {updateDbForce} = require("./update_db");
-        updateDbForce(knex).then()
-    }
-
     app.use(async ctx => {
         ctx.body = 'Hello World';
     });
